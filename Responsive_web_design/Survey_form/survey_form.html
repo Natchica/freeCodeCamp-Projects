@@ -4,60 +4,68 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-with, initial-scale=1.0" />
     <title>freeCodeCamp Survey Form Certification's Project</title>
-    <link rel="stylesheet" href="survey_styles.css" />  
+    <link rel="stylesheet" href="survey_styles.css" />
   </head>
   <body>
-    <img src="galaxy-space-wallpaper-HD2.jpg" alt="background-image">      
+    <img src="galaxy-space-wallpaper-HD2.jpg" alt="background-image" />
     <div class="text-div">
       <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">
-      This is the freeCodeCamp survey form certification's project
-    </p>
-    <form id="survey-form">
-      <label id="name-label" for="name">
-        Name :
-        <input type="text" id="name" required placeholder="Nathan GAUD" />
-      </label>
-      <label id="email-label" for="email">
-        Email :
-        <input
-          type="email"
-          id="email"
-          required
-          placeholder="nathan.gaud@gmail.com"
-        />
-      </label>
-      <label id="number-label" for="number">
-        Age :
-        <input type="number" id="number" min="0" max="99" placeholder="22" />
-      </label>
-      <select id="dropdown">
-        <option>(choose an option)</option>
-        <option>A</option>
-        <option>B</option>
-      </select>
-      <label>
-        <input type="radio" name="option" value="selecta" />
-        Ab
-      </label>
-      <label>
-        <input type="radio" name="option" value="selecta" />
-        Ba
-      </label>
-      <label>
-        <input type="checkbox" name="option" value="selectb" />
-        Ab
-      </label>
-      <label>
-        <input type="checkbox" name="option" value="selectb" />
-        Ba
-      </label>
-      <label>
-        Other :
-        <textarea rows="1" cols="30"> </textarea>
-      </label>
-      <input id="submit" type="submit" value="Submit" />
-    </form>
+      <p id="description">
+        This is the freeCodeCamp survey form certification's project
+      </p>
+      <div class="form-div">
+        <form id="survey-form">
+          <label id="name-label" for="name">
+            Name :
+            <input type="text" id="name" required placeholder="Prénom NOM" />
+          </label>
+          <label id="email-label" for="email">
+            Email :
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="prenom.nom@domaine.fr"
+            />
+          </label>
+          <label id="number-label" for="number">
+            Age :
+            <input
+              type="number"
+              id="number"
+              min="0"
+              max="99"
+              placeholder="42"
+            />
+          </label>
+          <select id="dropdown">
+            <option>(choose an option)</option>
+            <option>A</option>
+            <option>B</option>
+          </select>
+          <label>
+            <input type="radio" name="option" value="selecta" />
+            Ab
+          </label>
+          <label>
+            <input type="radio" name="option" value="selecta" />
+            Ba
+          </label>
+          <label>
+            <input type="checkbox" name="option" value="selectb" />
+            Ab
+          </label>
+          <label>
+            <input type="checkbox" name="option" value="selectb" />
+            Ba
+          </label>
+          <label>
+            Other :
+            <textarea rows="1" cols="30"> </textarea>
+          </label>
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </div>
     </div>
   </body>
 </html>
