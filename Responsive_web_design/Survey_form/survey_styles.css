@@ -77,6 +77,36 @@ section#color {
   margin: 0.5em 0;
 }
 
+/* Hide the default radio button */
+input[type="radio"] {
+  display: none;
+}
+
+/* Create a custom radio button */
+input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+/* Style the custom radio button to match the label text when selected */
+input[type="radio"]#red:checked + label:before {
+  background-color: red;
+}
+
+input[type="radio"]#green:checked + label:before {
+  background-color: green;
+}
+
+input[type="radio"]#blue:checked + label:before {
+  background-color: blue;
+}
+
 #food label {
   margin: 5px 5px;
 }
