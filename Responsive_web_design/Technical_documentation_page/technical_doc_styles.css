@@ -1,5 +1,40 @@
+:root {
+  font-family: 'Verdana', sans-serif;
+}
+
+main {
+  display: block;
+}
+
+nav#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  border-left: solid 1px black;
+  min-width: 290px;
+  width: 300px;
+  height: 100%;
+}
+
+nav header{
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px 20px;
+}
+
+nav a {
+  border : 1px solid black;
+  text-align: left;
+  padding:10px 30px;
+  color: black;
+  text-decoration: none;
+}
+
+/*Quand l'écran est trop petit, la navbar doit se mettre tout en haut de l'écran sous le titre*/
 @media (max_width) {
-    a {
-      width:10px;
-    }
+  a {
+    width: 10px;
   }
+}
