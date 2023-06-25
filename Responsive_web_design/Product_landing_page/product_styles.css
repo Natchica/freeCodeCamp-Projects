@@ -1,9 +1,10 @@
 :root {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: rgb(252, 246, 239);
+  --button-color: rgb(255, 217, 0);
 }
 
-.product-logo, .feature-icon {
+.product-logo {
   width: 50px;
   height: 50px;
 }
@@ -47,8 +48,9 @@ header nav a {
 }
 
 .section-div {
-  margin: 20px;
-  padding-top: 50px;
+  margin: 0 auto;
+  width:100%; 
+  max-width: 1000px;
 }
 
 #form {
@@ -56,6 +58,7 @@ header nav a {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding-top: 50px;
 }
 
 #form p {
@@ -72,8 +75,120 @@ header nav a {
   width: 115px;
   font-size: larg;
   font-weight: bolder;
-  background-color: rgb(255, 217, 0);
+  background-color: var(--button-color);
   border: none;
 }
 
+#Features {
+  margin: 50px;
+}
 
+#Features .feature {
+  display: flex;
+  align-items: center;
+}
+
+#Features .feature-icon {
+  min-width: 50px;
+  width: 50px;
+  height: auto;
+  margin: 0 40px;
+}
+
+#Features .text-div {
+  margin: 25px;
+}
+
+#Features .text-div h3,#Features .text-div p {
+  padding: 0;
+  margin: 0;
+}
+
+#Features .text-div p {
+  max-width: 750px;
+}
+
+#How_It_Works {
+  display: flex;
+  justify-content: center;
+}
+
+#How_It_Works video {
+  height: 500px;
+  max-width: 800px;
+  margin-bottom: 50px;
+  z-index: -1;
+}
+
+#Pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin:0 50px;
+}
+
+.price-div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: solid 1px black;
+  border-radius: 3px;
+  text-align: center;
+  max-width: 200px;
+  min-width: 150px;
+  background-color: white;
+}
+
+.price-div h4 {
+  background-color: rgb(218, 218, 218);
+  padding: 10px 0;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.price-div span {
+  margin: 10px;
+  font-size: larger;
+}
+
+.price-div p {
+  padding: 1px;
+  margin: 0;
+}
+
+#item-include {
+  text-align: left;
+  margin-left: 30px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+ul li {
+  text-align: left;
+  margin-left: 50px;
+}
+
+#item-submit {
+  margin: 5px;
+  background-color: var(--button-color); 
+  border: solid 1px black;
+  border-radius: 3px;
+}
+
+#item-submit:hover {
+  background-color: rgb(255, 166, 0);
+  cursor: pointer;
+}
+
+#page-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  margin: 30px 0 0 0;
+  padding: 10px;
+  background-color: rgb(218, 218, 218);
+}
