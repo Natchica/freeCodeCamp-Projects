@@ -1,0 +1,14 @@
+nav {
+  position: fixed;
+  top:0;
+}
+
+@media (max-width : 1000px) {
+  h1 {
+    font-weight:bold;
+  }
+}
+
+#welcome-section {
+  height:100vw;
+}
