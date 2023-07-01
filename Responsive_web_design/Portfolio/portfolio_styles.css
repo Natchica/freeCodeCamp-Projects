@@ -1,14 +1,20 @@
+body * {
+  border: solid 1px black;
+  background-color: antiquewhite;
+}
+
 nav {
   position: fixed;
   top:0;
+  margin-bottom: 5px;
+}
+
+#welcome-section {
+  height:100vw;
 }
 
 @media (max-width : 1000px) {
   h1 {
     font-weight:bold;
   }
-}
-
-#welcome-section {
-  height:100vw;
 }
