@@ -32,8 +32,8 @@ nav a {
 }
 
 .stickman {
-  height: 50vh;
-  width: 50vw;
+  height: 325px;
+  width: 25vw;
   display: flex;
   justify-content: center;
 }
@@ -43,20 +43,56 @@ nav a {
 }
 
 .head {
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  border-width:10px;
 }
 
 .body, .member {
-  width: 5px;
   border-radius: 5px;
+  background-color: black;
 }
 
 .body {
-  height: 200px;
+  width: 8px;
+  height: 100px;
+  top: 257px;
+  z-index: 1;
 }
 
 .member {
-  height: 150px;
+  width: 5px;
+}
+
+.arm-left, .arm-right {
+  height: 75px;
+}
+
+.arm-left {
+  top: 272px;
+  left: 246px;
+  transform: rotate(25deg);
+}
+
+.arm-right {
+  top: 225px;
+  left: 298px;
+  transform: rotate(-120deg);
+}
+
+.leg-left, .leg-right {
+  height: 100px;
+}
+
+.leg-left {
+  top: 342px;
+  left: 251px;
+  transform: rotate(15deg);
+}
+
+.leg-right {
+  top: 341px;
+  left: 280px;
+  transform: rotate(-15deg);
 }
